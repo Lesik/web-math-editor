@@ -1,6 +1,3 @@
-import { HasChildren, HasParent } from "./common";
-import { NodeType } from "../INode";
-
 enum UnaryOpType {
     EXP = 'exp',
 }
@@ -12,19 +9,7 @@ export enum InnerNodeType {
     BINARY = 'binary',
 }
 
-interface BaseInnerNode extends HasChildren, HasParent {
-    type: NodeType.INNER,
-    innerType: InnerNodeType,
+export class BinaryOpNode {
+    constructor() {
+    }
 }
-
-export interface InnerUnaryNode extends BaseInnerNode {
-    innerType: InnerNodeType.UNARY
-    unaryOpType: UnaryOpType.EXP,
-}
-
-export interface InnerBinaryNode extends BaseInnerNode {
-    innerType: InnerNodeType.BINARY,
-    binaryOpType: BinaryOpType,
-}
-
-export type InnerNode = InnerUnaryNode | InnerBinaryNode;

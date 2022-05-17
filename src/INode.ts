@@ -12,4 +12,6 @@ export interface IRootNode extends HasChildren {
     type: NodeType.ROOT,
 }
 
-export type INode = IRootNode | InnerNode | LeafNode1;
+export type TNode = IRootNode | InnerNode | LeafNode1;
+
+export class MyNode {}

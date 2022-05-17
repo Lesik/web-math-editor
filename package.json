@@ -3,9 +3,11 @@
     "start": "vite"
   },
   "dependencies": {
+    "katex": "^0.15.3",
     "tex-math-parser": "^2.0.3"
   },
   "devDependencies": {
+    "@types/katex": "^0.14.0",
     "vite": "^2.9.9"
   }
 }
